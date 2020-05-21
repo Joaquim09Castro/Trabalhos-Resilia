@@ -1,0 +1,72 @@
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    background-color: rgb( 90, 90, 90);
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 13px 0 7px 0;
+    background-color: #b64900;
+}
+
+.nome_site {
+    color: rgb(0, 255, 150);
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22px;
+}
+
+.menu_cabecalho {
+    display: flex;
+}
+
+.menu_cabecalho a {
+    margin: 0 8px;
+    padding: 5px 10px 2px;
+    border: 0px;
+    border-radius: 20px;
+    background-color: rgb( 0, 240, 142);
+    border: 2px rgb( 90, 90, 90) solid;
+    font-size: 85%;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto 0 0;
+    background-color: #b64900;
+    font-style: italic;
+    font-size: 13px;
+    color: rgb( 0, 240, 142);
+    letter-spacing: 0.2px;
+    word-spacing: 0.6px;
+}
+
+.menu_rodape {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 15px 0 10px;
+}
+
+.menu_rodape img {
+    margin: 0 10px;
+    width: 22px;
+    padding: 5px;
+    border: 2px rgb( 90, 90, 90) solid;
+    border-radius: 14px;
+    background-color: rgb( 0, 240, 142);
+}
+
+footer p {
+    margin-bottom: 5px;
+}
