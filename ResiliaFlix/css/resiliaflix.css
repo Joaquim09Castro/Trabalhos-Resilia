@@ -13,15 +13,31 @@ header {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 13px 0 7px 0;
+    padding: 13px 0 10px 0;
     background-color: #b64900;
 }
 
 .nome_site {
-    color: rgb(0, 245, 140);
+    color: rgb( 15, 225, 140);
     font-style: italic;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 25px;
+    font-size: 23px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.nome_site a {
+    color: inherit;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.nome_site a:hover {
+    text-decoration: underline;
+}
+
+.nome_site a:active {
+    color: rgb(47, 49, 167);
 }
 
 .menu_cabecalho {
@@ -33,9 +49,23 @@ header {
     padding: 5px 10px 2px;
     border: 0px;
     border-radius: 20px;
-    background-color: rgb(0, 225, 140);
+    background-color: rgb( 15, 225, 140);
     border: 2px rgb( 80, 80, 80) solid;
     font-size: 85%;
+}
+
+.menu_cabecalho a:hover {
+    color: rgb(85, 253, 113);
+    background-color: rgb(47, 49, 167);
+    transform: scale(1.1);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.menu_cabecalho a:active {
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    transition: 0s;
 }
 
 main {
@@ -54,7 +84,7 @@ footer {
     background-color: #b64900;
     font-style: italic;
     font-size: 13px;
-    color: rgb( 0, 225, 140);
+    color: rgb( 15, 225, 140);
     letter-spacing: 0.2px;
     word-spacing: 0.6px;
     border-top: rgb( 40, 40, 40) 3px solid; /*ficar atento as bordas do main*/
@@ -67,13 +97,41 @@ footer {
     margin: 15px 0 10px;
 }
 
-.menu_rodape img {
-    margin: 0 10px;
-    width: 22px;
-    padding: 5px;
+.menu_rodape a {
+    margin: 0 10px 2px;
+    width: 100%;
+    padding: 6px;
     border: 2px rgb( 80, 80, 80) solid;
-    border-radius: 14px;
+    border-radius: 100%;
     background-color: rgb( 0, 225, 140);
+}
+
+#twitter-link:hover {
+    background-color: rgb( 42, 174, 255);
+    /* transition: 0.6s; */
+}
+
+#instagram-link:hover {
+    background: #f09433; 
+        background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+        background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+        background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    transition: 0.6s; /*transition não suportado em gradient*/
+}
+
+#facebook-link:hover {
+    background-color: rgb(59, 89, 152);
+    /* transition: 0.6s; */
+}
+
+#youtube-link:hover {
+    background-color: rgb(255, 0, 0);
+    /* transition: 0.6s; */
+}
+
+.menu_rodape img {
+    width: 25px;
 }
 
 footer p {
