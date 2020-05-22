@@ -9,7 +9,7 @@ body {
     background-color: rgb( 90, 90, 90);
 }
 
-header {
+.cabecalho-principal {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -76,13 +76,14 @@ main {
     justify-content: center;
     border: rgb( 40, 40, 40) 4px solid;
     padding: 30px 0;
+    height: 100%;
 }
 
 .filmes {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: 85%;
+    width: 100%;
 }
 
 .filmes a{
@@ -105,7 +106,7 @@ footer {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    margin: auto 0 0;
+    margin: 0 0;
     background-color: #b64900;
     font-style: italic;
     font-size: 13px;
@@ -162,4 +163,42 @@ footer {
 
 footer p {
     margin-bottom: 5px;
+}
+
+/* Mobile */
+@media(max-width: 768px) { 
+
+    .cabecalho-principal {
+        padding: 30px;
+        font-size: 1.5em;
+        justify-content: space-between;
+    }
+
+    .nome_site {
+        font-size: 1.5em;
+    }
+
+    .filmes {
+        justify-content: space-evenly;
+        align-items: center;
+        flex: 50%;
+    }
+
+    .filmes a {
+        flex: 40%;
+        text-align: center;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    footer p {
+        font-size: 1em;
+    }
+
+    .menu_rodape a {
+        width: 25px;
+        margin: 0 5px 10px;
+    }
 }
