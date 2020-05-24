@@ -89,6 +89,7 @@ main {
 
 .filmes a{
     margin: 10px 10px;
+    width: 20%;
 }
 
 #capas {
@@ -200,6 +201,7 @@ footer p {
     .filmes a {
         flex: 40%;
         text-align: center;
+        width: 100%;
     }
 
     footer {
