@@ -14,14 +14,15 @@ body {
     justify-content: space-evenly;
     align-items: center;
     padding: 13px 0 10px 0;
-    background-color: #b64900;
+    background-color: rgb(47, 49, 167);
     border: 4px solid rgb( 57, 57, 57);
+    border-radius: 2px;
     border-bottom: 0px;
     
 }
 
 .nome_site {
-    color: rgb(41, 170, 118);
+    color: rgb( 49, 155, 45);
     font-style: italic;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 23px;
@@ -40,7 +41,7 @@ body {
 }
 
 .nome_site a:active {
-    color: rgb(47, 49, 167);
+    color: rgb( 255, 255, 255);
 }
 
 .menu_cabecalho {
@@ -59,7 +60,7 @@ body {
 
 .menu_cabecalho a:hover {
     color: rgb(85, 253, 113);
-    background-color: rgb(47, 49, 167);
+    background-color: rgb(4, 40, 169);
     transform: scale(1.1);
     transition: 0.2s;
     cursor: pointer;
@@ -92,7 +93,7 @@ main {
 
 #capas {
     height: 100%;
-    border: #273294a2 3px solid;
+    border: rgb(47, 49, 167) 4px solid;
     border-radius: 10px;
     transition: 0.5s;
 }
@@ -107,7 +108,7 @@ footer {
     justify-content: space-around;
     align-items: center;
     margin: 0 0;
-    background-color: #b64900;
+    background-color: rgb(47, 49, 167);
     font-style: italic;
     font-size: 13px;
     color: rgb(41, 170, 118);
@@ -144,7 +145,7 @@ footer {
         background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
         background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
-    transition: 0.6s; /*transition não suportado em gradient*/
+    /* transition: 0.6s; */ /*transition não suportado em gradient*/
 }
 
 #facebook-link:hover {
@@ -166,22 +167,34 @@ footer p {
 }
 
 /* Mobile */
-@media(max-width: 768px) { 
+
+@media only screen and (max-width: 780px){
 
     .cabecalho-principal {
         padding: 30px;
         font-size: 1.5em;
         justify-content: space-between;
+        flex-direction: column;
     }
 
     .nome_site {
-        font-size: 1.5em;
+        font-size: 2em;
+        margin-bottom: 0.5em;
+    }
+
+    .menu_cabecalho {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu_cabecalho a {
+        margin: 0.5em;
     }
 
     .filmes {
-        justify-content: space-evenly;
-        align-items: center;
-        flex: 50%;
+        height: 100%;
+        flex: 40%;
     }
 
     .filmes a {
@@ -194,11 +207,12 @@ footer p {
     }
 
     footer p {
-        font-size: 1em;
+        font-size: 1.3em;
     }
 
     .menu_rodape a {
-        width: 25px;
-        margin: 0 5px 10px;
+        width: 100%;
+        padding: 1em;
+        margin: 0 12px 10px;
     }
 }
